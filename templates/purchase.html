@@ -1,0 +1,63 @@
+<script type="text/javascript" src="/static/js/qrcodejs/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/qrcodejs/qrcode.js"></script>
+<script src="/static/js/purchase.js"></script>
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+<body style="color:#2c99e8">
+{% block body %}
+<!--h2>Example purchase with Aerpass with oauth2 session</h2>
+<div class="databox">
+  <h3>Data returned from oauth profile api</h3>
+  <div>Email: {{profile.profile.identifiers.email.0.value}}</div>
+  <div>Name: {{profile.profile.display_name}}</div>
+  <div>Address: {{profile.profile.addresses}}</div>
+  <div>Aerpass userid: {{profile.user_id}}</div>
+  <a href="/logout">Logout</a>
+</div>
+<div class="databox">
+  <h3>Data returned from openid</h3>
+  {{tokeninfo}}
+  <div>Email: {{tokeninfo.email}}</div>
+  <div>Name: {{tokeninfo.name}}</div>
+  <div>Unique id: {{tokeninfo.sub}}</div>
+</div>
+<div class="databox">
+  Clicking on the Puchase with Aerpass button will begin the transaction process
+   and generate a QR code.<br/>
+  <br/>
+  <form name="purchase">
+    Amount: <input type="text" name="amount"><br/>
+    <input type="submit" value="Purchase with Aerpass">
+  </form>
+</div>
+<div class="databox">
+  <h3>Data returned from oauth transaction post</h3>
+  <div id="post_result"></div>
+  <h3>Data returned from oauth transaction get</h3>
+  <div id="get_result"></div>
+</div>
+<div class="databox">
+  <div id="qrauth"><img></div>
+  <div id="qrtext"></div>
+  <div id="qrstatus"></div>
+  <div id="transstatus"></div>
+  <div id="transresults"></div>
+</div-->
+<p>&nbsp;</p>
+<h1 style="color:#ffffff">CONGRATULATIONS!</h1>
+<p style="color:#ffffff">You have just successfully logged in using AerPass, the easiest and most secure user login process available.<br/>
+This was accomplished without sending any personally identifying information like username or password over the internet,
+nor was it necessary to store any of this information on your phone where it could potentially be hacked.<br/>
+With AerPass, you never have to remember a username or password again!</p>
+
+<p style="color:#ffffff">Stay tuned for the future of secure payments with AerPass!</p>
+<a href="/logout" style="color:#b8b8b8" align="center">Logout</a><br/>
+<!-- <form name="purchase">
+  Amount: <input type="text" name="amount"><br/>
+  <input type="submit" value="Purchase with Aerpass">
+</form> -->
+<div id="qrauth"></div>
+<div id="qrtext"></div>
+<div id="qrstatus"></div>
+<div id="transstatus"></div>
+{% endblock %}
+</body>

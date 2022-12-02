@@ -1,0 +1,35 @@
+#login {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+}
+h1 {
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 24pt;
+  text-align: center;
+}
+p {
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 12pt;
+  text-align: justify;
+}
+.databox {
+  padding: 5px;
+  border: 1px #0f3e61 solid;
+  margin-bottom: 10px;
+}
+.databox h3 {
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 14pt;
+}
+.databox a {
+  padding: 10px;
+}
+#qrauth {
+  width:300px;
+  height:300px;
+}
+#qrauth img {
+  max-width:100%;
+  max-height:100%;
+}

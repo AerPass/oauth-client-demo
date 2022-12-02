@@ -1,0 +1,13 @@
+<script type="text/javascript" src="/static/js/qrcodejs/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/qrcodejs/qrcode.js"></script>
+<script src="/static/js/index.js"></script>
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+{% block body %}
+<h2>Example login with Aerpass</h2>
+Clicking on the Login with Aerpass button will request the data associated with
+this session and generate a QR code.
+<div id="login">Login with Aerpass</div>
+<div id="qrauth"></div>
+<div id="qrtext"></div>
+<div id="qrstatus"></div>
+{% endblock %}
